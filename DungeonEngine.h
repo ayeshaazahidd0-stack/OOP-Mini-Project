@@ -65,7 +65,7 @@ bool Character::operator==(const Character &other) const {
         && defense == other.defense;
 }
 
-std::ostream& operator<<(std::ostream &os, const Character &c) {
+ostream& operator<<(ostream &os, const Character &c) {
     os << "[" << c.name << " | HP: " << c.health
        << " | ATK: " << c.attackPower << " | DEF: " << c.defense << "]";
     return os;
