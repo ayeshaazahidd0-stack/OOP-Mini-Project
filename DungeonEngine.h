@@ -1,22 +1,22 @@
 #ifndef DUNGEONENGINE_H
 #define DUNGEONENGINE_H
-
 #include <iostream>
 #include <string>
+using namespace std;
 
 class Character {
 private:
-    std::string name;
+    string name;
     int health;
     int attackPower;
     int defense;
 
 public:
     Character();
-    Character(const std::string &n, int h, int a, int d);
+    Character(const string &n, int h, int a, int d);
     Character(const Character &source);
 
-    std::string getName() const { return name; }
+    string getName() const { return name; }
     bool isAlive() const { return health > 0; }
 
     Character operator+(int heal) const;
@@ -25,12 +25,12 @@ public:
     bool operator>(const Character &other) const;
     bool operator==(const Character &other) const;
 
-    friend std::ostream& operator<<(std::ostream &os, const Character &c);
+    friend ostream& operator<<(ostream &os, const Character &c);
 };
 
 Character::Character() : name("Unknown Warrior"), health(100), attackPower(10), defense(5) {}
 
-Character::Character(const std::string &n, int h, int a, int d)
+Character::Character(const string &n, int h, int a, int d)
     : name(n), health(h), attackPower(a), defense(d) {}
 
 Character::Character(const Character &source)
