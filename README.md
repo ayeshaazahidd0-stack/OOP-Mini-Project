@@ -1,42 +1,23 @@
-**Demo Output Logic**
+Student Name & Roll Number: Ayesha Zahid (Roll Number: 29)
 
-The simulation performs the following:
+Chosen Problem/Topic: Dungeon Exploration & Combat Engine (Object-Oriented Programming with Operator Overloading)
 
-1. Init: Spawns a player, an enemy, and a "Shadow" clone.
+Brief Description: This project implements a character-based combat system for a dungeon exploration game using C++. It utilizes a Character class with custom constructors and overloaded operators to handle gameplay mechanics. The engine manages health adjustments (healing and damage taking), character comparisons, and formatted data output through stream insertion overloading.
 
-2. Combat: Deducts damage from the player (Damage - Defense).
+Sample Output: 
+--- Dungeon Initialization ---
+Player: [Ayesha | HP: 120 | ATK: 25 | DEF: 8]
+Enemy:  [Unknown Warrior | HP: 100 | ATK: 10 | DEF: 5]
+Shadow: [Ayesha | HP: 120 | ATK: 25 | DEF: 8]
 
-3. Recovery: Adds health via a potion.
+An enemy strikes Ayesha for 30 damage!
+Result: [Ayesha | HP: 98 | ATK: 25 | DEF: 8]
 
-4. Logic: Compares stats to determine if the player is stronger than the enemy.
+You find a Health Potion! +15 HP
+Result: [Ayesha | HP: 113 | ATK: 25 | DEF: 8]
 
-**Functional Requirements**
+Checking battle strength...
+Ayesha is stronger than Unknown Warrior!
+The shadow is a different entity.
 
-1. Custom Class Design
-
-● Create a class relevant to your chosen problem
-
-● Include appropriate data members and member functions
-
-2. Function Overloading (Mandatory)
-
-Implement at least 3 overloaded functions (same name, different parameters), for
-
-example:
-
-● Default initialization
-
-● Parameterized initialization
-
-● Copy or alternate input method
-
-3. Operator Overloading (Mandatory)
-
-Overload at least 4 operators, including:
-
-● At least 2 arithmetic operators (e.g., +, -, *)
-
-● At least 1 comparison operator (e.g., ==, <)
-
-● << for output display (friend function)
-
+--- Adventure End ---
